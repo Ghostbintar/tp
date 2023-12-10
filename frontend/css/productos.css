@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .grid-container {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  div.paragraph {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #ccc;
+    background-color: #F8E8EE;
+  }
+  
+  div.paragraph p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: backwards;
+  }
+  
+  div.paragraph img {
+    max-width: 100%;
+    height:20rem; 
+    object-fit: cover; 
+  }
+  

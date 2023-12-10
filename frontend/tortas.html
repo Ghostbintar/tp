@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/t_productos.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script>button.js</script>
+    <title> Tortas</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icon/logo.svg" alt="Logo">
+        </div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
+                    <button id="openOrderForm">Hacer Pedido</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  
+
+
+<h2>Productos</h2>
+
+<table>
+  <tr class="category">
+    <td colspan="4">Tortas</td>
+  </tr>
+  <tr>
+    <th>Cantidad de producto</th>
+    <th>El prodecto</th>
+    <th>imagen de prodecto </th>
+    <th>El precio </th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/tortacasamiento.jpg" alt=" Tortas1" onclick="openImage('imagenes/Tortas/tortacasamiento.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/tortacumple.jpg" alt=" Tortas2" onclick="openImage('imagenes/Tortas/tortacumple.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/lettercake.jpg" alt=" Tortas3" onclick="openImage('imagenes/Tortas/lettercake.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/numbercake.jpg" alt=" Tortas4" onclick="openImage('imagenes/Tortas/numbercake.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/tortacremayfrutilla.jpg" alt=" Tortas5" onclick="openImage('imagenes/Tortas/tortacremayfrutilla.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Tortas</td>
+    <td><img src="imagenes/Tortas/dripcake.jpg" alt=" Tortas6" onclick="openImage('imagenes/Tortas/dripcake.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+        <td>1</td>
+        <td>Tortas</td>
+        <td><img src="imagenes/Tortas/cakebuttercream.jpg" alt=" Tortas7" onclick="openImage('imagenes/Tortas/cakebuttercream.jpg')"></td>
+        <td>$10000</td>
+   </tr>
+    <td></td>
+
+</table>
+<script src="scrpit/button.js"></script>
+<script>
+  function openImage(imagePath) {
+    window.open(imagePath, "_blank");
+  }
+</script>
+
+</body>
+</html>

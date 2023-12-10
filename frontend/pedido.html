@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/pedido.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+<body>
+
+    <header>
+        
+       
+            <div class="logo">
+                <img src="icon/logo.svg" alt="Logo">
+            </div>
+            
+            <div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="sobremi.html">Sobre mí</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+        </header>
+    </header>
+    <h1>Formulario de Pedido</h1>
+    <section id="formulario">
+        <form method="post" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="Email">Correo :</label>
+            <input type="text" id="Email" name="Email">
+
+            <label for="tipo_pedido">Tipo de Pedido:</label>
+            <select id="tipo_pedido" name="tipo_pedido">
+                <option value="bombones">bombones</option>
+                <option value="boxes">boxes</option>
+                <option value="oreos">oreos</option>
+                <option value="Pascuas">Pascuas</option>
+                <option value="budines">budines</option>
+                <option value="shots">shots</option>
+                <option value="tartas">tartas</option>
+                <option value="tortas">tortas</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad">
+
+            <label for="fecha_entrega">Fecha de Entrega:</label>
+            <input type="date" id="fecha_entrega" name="fecha_entrega">
+
+            <label for="mensaje">Mensaje:</label>
+            <input type="text" id="mensaje" name="mensaje">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+<script src="scrpit/valida_pedido.js"></script>
+    <footer>
+        <p>&copy; Copyright © 2023 Baker’s Box</p>
+         
+         
+     </footer>
+    
+</body>
+
+</html>

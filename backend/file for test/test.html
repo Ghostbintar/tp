@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Interface</title>
+</head>
+<body>
+
+    <h1>Message Interface</h1>
+
+    <h2>List Messages</h2>
+    <button onclick="listMessages()">List Messages</button>
+    <div id="listMessagesResult"></div>
+
+    <h2>Add Message</h2>
+    <form id="addMessageForm">
+        <label for="nombre">Name:</label>
+        <input type="text" name="nombre" required><br>
+
+        <label for="celular">Phone:</label>
+        <input type="text" name="celular" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="mensaje">Message:</label>
+        <textarea name="mensaje" rows="4" required></textarea><br>
+
+        <button type="button" onclick="addMessage()">Add Message</button>
+    </form>
+
+    <h2>Respond to Message</h2>
+    <form id="respondMessageForm">
+        <label for="id">Message ID:</label>
+        <input type="number" name="id" required><br>
+
+        <label for="gestion">Response:</label>
+        <textarea name="gestion" rows="4" required></textarea><br>
+
+        <button type="button" onclick="respondMessage()">Respond to Message</button>
+    </form>
+
+    <script>
+        async function listMessages() {
+            const response = await fetch("/mensajes", { method: "GET" });
+            const data = await response.json();
+            document.getElementById("listMessagesResult").innerText = JSON.stringify(data);
+        }
+
+        async function addMessage() {
+            const form = new FormData(document.getElementById("addMessageForm"));
+            const response = await fetch("/mensajes", { method: "POST", body: form });
+            const data = await response.json();
+            alert(data.mensaje);
+        }
+
+        async function respondMessage() {
+            const form = new FormData(document.getElementById("respondMessageForm"));
+            const response = await fetch(`/mensajes/${form.get("id")}`, { method: "PUT", body: form });
+            const data = await response.json();
+            alert(data.mensaje);
+        }
+    </script>
+
+</body>
+</html>

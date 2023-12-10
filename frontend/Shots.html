@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/t_productos.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script>button.js</script>
+    <title> Shots</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="icon/logo.svg" alt="Logo">
+    </div>
+        <ul>
+            <li><a href="index.html">incio</a></li>
+             <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">produectos</a>
+               <div class="dropdown-content">
+                <a href="bombones.html">Bombones</a>
+                      <a href="boxes.html">Boxes</a>
+                      <a href="budines.html">Budines</a>
+                      <a href="oreos.html">Oreos</a>
+                      <a href="pascuas.html">Pascuas</a>
+                      <a href="Shots.html">Shots</a>
+                      <a href="tartas.html">Tartas</a>
+                      <a href="tortas.html">Tortas</a>
+              </div>
+             <li><a href="contacto.html">Contacto</a></li>
+             <li><a href="sobremi.html">Sobre mí</a></li>
+             <button id="openOrderForm">Hacer Pedido</button>
+            
+          </ul>
+    
+  
+</header>
+
+<h2>Productos</h2>
+
+<table>
+  <tr class="category">
+    <td colspan="4">Shots</td>
+  </tr>
+  <tr>
+    <th>Cantidad de producto</th>
+    <th>El prodecto</th>
+    <th>imagen de prodecto </th>
+    <th>El precio </th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/shotcheesecake.jpg" alt=" Shots1" onclick="openImage('imagenes/Shots/shotcheesecake.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/shotchocotortaytiramisu.jpg" alt=" Shots2" onclick="openImage('imagenes/Shots/shotchocotortaytiramisu.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/shotsfrutillaylemonpie.jpg" alt=" Shots3" onclick="openImage('imagenes/Shots/shotsfrutillaylemonpie.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/shotsveganos.jpg" alt=" Shots4" onclick="openImage('imagenes/Shots/shotsveganos.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/brownies.jpg" alt=" Shots5" onclick="openImage('imagenes/Shots/brownies.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Shots</td>
+    <td><img src="imagenes/Shots/frutillaylemonpie.jpg" alt=" Shots6" onclick="openImage('imagenes/Shots/frutillaylemonpie.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+        <td>1</td>
+        <td>Shots</td>
+        <td><img src="imagenes/Shots/pavlovamini.jpg" alt=" Shots7" onclick="openImage('imagenes/Shots/pavlovamini.jpg')"></td>
+        <td>$10000</td>
+   </tr>
+    <td></td>
+
+</table>
+<script src="scrpit/button.js"></script>
+<script>
+  function openImage(imagePath) {
+    window.open(imagePath, "_blank");
+  }
+</script>
+
+</body>
+</html>

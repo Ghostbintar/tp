@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/t_productos.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script>button.js</script>
+    
+
+   
+  <title> Pascuas y Oreos</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="icon/logo.svg" alt="Logo">
+    </div>
+        <ul>
+            <li><a href="index.html">incio</a></li>
+             <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">produectos</a>
+               <div class="dropdown-content">
+                <a href="bombones.html">Bombones</a>
+                      <a href="boxes.html">Boxes</a>
+                      <a href="budines.html">Budines</a>
+                      <a href="oreos.html">Oreos</a>
+                      <a href="pascuas.html">Pascuas</a>
+                      <a href="Shots.html">Shots</a>
+                      <a href="tartas.html">Tartas</a>
+                      <a href="tortas.html">Tortas</a>
+              </div>
+             <li><a href="contacto.html">Contacto</a></li>
+             <li><a href="sobremi.html">Sobre mí</a></li>
+             <button id="openOrderForm">Hacer Pedido</button>
+            
+          </ul>
+    
+  
+</header>
+<h2>Productos</h2>
+
+<table>
+  <tr class="category">
+    <td colspan="4">Oreos</td>
+  </tr>
+  <tr>
+    <th>Cantidad de producto</th>
+    <th>El prodecto</th>
+    <th>imagen de prodecto </th>
+    <th>El precio </th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/oreos1.jpg" alt=" Oreos1" onclick="openImage('imagenes/Oreos/oreos1.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/oreos2.jpg" alt=" Oreos2" onclick="openImage('imagenes/Oreos/oreos2.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/cakepops1.jpg" alt=" Oreos3" onclick="openImage('imagenes/Oreos/cakepops1.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/cakepops2.jpg" alt=" Oreos4" onclick="openImage('imagenes/Oreos/cakepops2.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/cakepops3.jpg" alt=" Oreos5" onclick="openImage('imagenes/Oreos/cakepops3.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Oreos</td>
+    <td><img src="imagenes/Oreos/cookies3.jpg" alt=" Oreos6" onclick="openImage('imagenes/Oreos/cookies3.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+        <td>1</td>
+        <td>Oreos</td>
+        <td><img src="imagenes/Oreos/oreos6.jpg" alt=" Oreos7" onclick="openImage('imagenes/Oreos/oreos6.jpg')"></td>
+        <td>$10000</td>
+   </tr>
+    <td></td>
+
+</table>
+<script src="scrpit/button.js"></script>
+<script>
+  function openImage(imagePath) {
+    window.open(imagePath, "_blank");
+  }
+</script>
+
+</body>
+</html>

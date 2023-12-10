@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/h_f_contacto.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    
+    
+    <title>Página con Bootstrap</title>
+<header>
+        <div class="logo">
+            <img src="icon/logo.svg" alt="Logo">
+        </div>
+            <ul>
+                <li><a href="index.html">incio</a></li>
+                    <li class="dropdown">
+                         <a href="productos.html" class="dropbtn">produectos</a>
+                        <div class="dropdown-content">
+                        <a href="bombones.html">Bombones</a>
+                    <a href="boxes.html">Boxes</a>
+                    <a href="budines.html">Budines</a>
+                    <a href="oreos.html">Oreos</a>
+                    <a href="pascuas.html">Pascuas</a>
+                    <a href="Shots.html">Shots</a>
+                    <a href="tartas.html">Tartas</a>
+                    <a href="tortas.html">Tortas</a>
+                  </div>
+                 <li><a href="contacto.html">Contacto</a></li>
+                 <li><a href="sobremi.html">Sobre mí</a></li>
+                 
+                
+              </ul>
+        
+      
+    </header>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                    <h3><u>Formulario de contacto</u></h3>
+                    <form id="contactForm"  method="post">
+                        <div class="input-container">
+                          <label for="nombre"><i class="fas fa-user"></i> Nombre:</label><br>
+                          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+                        </div>
+                    
+                        <div class="input-container">
+                          <label for="celular"><i class="fas fa-phone"></i> celular:</label><br>
+                          <input type="tel" id="celular" name="celular" placeholder="Tu celular" required><br><br>
+                        </div>
+                    
+                        <div class="input-container">
+                          <label for="email"><i class="fas fa-envelope"></i> Email:</label><br>
+                          <input type="email" id="email" name="email"  placeholder="Tu correo electrónico" required><br><br>
+                        </div>
+                    
+                        <div class="input-container">
+                          <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label><br>
+                          <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Tu mensaje" required>
+                          </textarea><br><br>
+                        </div>
+                    
+                        <input type="submit" value="Enviar">
+                      </form>
+                      <div id="mensajeEnviado" style="display: none;">Datos enviados</div>
+                    </div>
+                        <script src="js/formulario.js"></script>
+
+            <div class="col-md-6">
+                <h3><u>Mi contacto</u></h3>
+                <p><i class="fas fa-envelope"></i> <b>MAIL:</b> <a href="mailto:bakersboxpasteleria@gmail.com">bakersboxpasteleria@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <b>CELULAR:</b> <a href="https://wa.me/541141985306" target="_blank">11-4198-5306</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <b>DIRECCIÓN:</b> <a href="https://www.google.com/maps?q=Republica+del+L%C3%ADbano+2080+Quilmes" target="_blank">Republica del Líbano 2080 Quilmes</a></p>
+                <p><i class="fab fa-instagram"></i> <b>INSTAGRAM:</b> <a href="https://www.instagram.com/bakersboxes_">@bakersboxes_</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.121761026818!2d-58.286789299999995!3d-34.7273251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32de72f16bb83%3A0x45bcb250ea7d9a38!2sRep%C3%BAblica%20del%20L%C3%ADbano%202080%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697972231228!5m2!1ses-419!2sar" width="100%" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+   
+<br>
+<script src="scrpit/valida.js"></script>
+    <footer>
+       <p>&copy; Copyright © 2023 Baker’s Box</p>
+        
+        
+    </footer>
+</body>
+</html>

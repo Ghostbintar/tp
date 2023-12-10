@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/t_productos.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="scrpit/button.js"></script>
+    <title>productos</title>
+
+
+    <header>
+      <div class="logo">
+          <img src="icon/logo.svg" alt="Logo">
+      </div>
+          <ul>
+              <li><a href="index.html">incio</a></li>
+               <li class="dropdown">
+                 <a href="javascript:void(0)" class="dropbtn">produectos</a>
+                 <div class="dropdown-content">
+                  <a href="bombones.html">Bombones</a>
+                        <a href="boxes.html">Boxes</a>
+                        <a href="budines.html">Budines</a>
+                        <a href="oreos.html">Oreos</a>
+                        <a href="pascuas.html">Pascuas</a>
+                        <a href="Shots.html">Shots</a>
+                        <a href="tartas.html">Tartas</a>
+                        <a href="tortas.html">Tortas</a>
+                </div>
+               <li><a href="contacto.html">Contacto</a></li>
+               <li><a href="sobremi.html">Sobre mí</a></li>
+               <button id="openOrderForm">Hacer Pedido</button>
+              
+            </ul>
+      
+    
+  </header>
+  <title> Budines</title>
+
+</head>
+<body>
+
+<h2>Productos</h2>
+
+<table>
+  <tr class="category">
+    <td colspan="4">Budin y Macarones</td>
+  </tr>
+  <tr>
+    <th>Cantidad de producto</th>
+    <th>El prodecto</th>
+    <th>imagen de prodecto </th>
+    <th>El precio </th>
+  </tr>
+ 
+  <tr>
+    <td>1</td>
+    <td>Budin</td>
+    <td><img src="imagenes/Budines/Budin_Carrot.jpg" alt=" Budines1" onclick="openImage('imagenes/Budines/Budin_Carrot.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Budin</td>
+    <td><img src="imagenes/Budines/budughíanushahátz.jpg" alt=" Budines2" onclick="openImage('imagenes/Budines/budughíanushahátz.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>macarons</td>
+    <td><img src="imagenes/Budines/macarons1.jpg" alt=" macarons1" onclick="openImage('imagenes/Budines/macarons1.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>macarons</td>
+    <td><img src="imagenes/Budines/macarons2.jpg" alt=" macarons2" onclick="openImage('imagenes/Budines/macarons2.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>macarons</td>
+    <td><img src="imagenes/Budines/macarons3.jpg" alt=" macarons3" onclick="openImage('imagenes/Budines/macarons3.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Rogel</td>
+    <td><img src="imagenes/Budines/Rogel.jpg" alt=" Rogel" onclick="openImage('imagenes/Budines/Rogel.jpg')"></td>
+    <td>$10000</td>
+  </tr>
+    <td></td>
+
+</table>
+<script src="scrpit/button.js"></script>
+<script>
+  function openImage(imagePath) {
+    window.open(imagePath, "_blank");
+  }
+</script>
+
+</body>
+</html>

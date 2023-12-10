@@ -1,0 +1,48 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 80%px; 
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-arrows {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    
+    width: 100%;
+  }
+  
+  .arrow {
+    font-size: 2em;
+    cursor:pointer;
+  }
+  
+  .slide-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  

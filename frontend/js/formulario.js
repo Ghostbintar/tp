@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const formData = new FormData(document.getElementById('contactForm'));
 
     // Realizar el envío utilizando fetch
-    fetch('https://ghostbin3.pythonanywhere.com/mensajes', {
+    fetch('http://127.0.0.1:5001/mensajes', {
     method: 'post',
     body: formData
     })
@@ -31,5 +31,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     console.error('Error:', error);
     });
 });
-
 

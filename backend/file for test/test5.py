@@ -65,7 +65,7 @@ class MensajeApp:
 
     def mostrar_todos(self):
         self.conectar_base_datos()
-        self.cursor.execute("SELECT * FROM connect_box")
+        self.cursor.execute("SELECT * FROM connectbox")
         mensajes = self.cursor.fetchall()
         self.mostrar_resultado(mensajes)
         self.cursor.close()
@@ -84,7 +84,7 @@ class MensajeApp:
             return
 
         try:
-            self.cursor.execute(f"DELETE FROM connect_box WHERE id = {id_mensaje}")
+            self.cursor.execute(f"DELETE FROM connectbox WHERE id = {id_mensaje}")
             self.conn.commit()
             messagebox.showinfo("Éxito", "Mensaje eliminado correctamente.")
         except mysql.connector.Error as err:
@@ -121,7 +121,7 @@ class MensajeApp:
                 host="localhost",
                 user="root",
                 password="",
-                database="bakers_box"
+                database="Ahmed"
             )
             self.cursor = self.conn.cursor(dictionary=True)
         except mysql.connector.Error as err:
@@ -130,7 +130,7 @@ class MensajeApp:
 
     def verificar_nuevos_mensajes(self):
         self.conectar_base_datos()
-        self.cursor.execute("SELECT COUNT(*) FROM connect_box")
+        self.cursor.execute("SELECT COUNT(*) FROM connectbox")
         numero_mensajes_actual = self.cursor.fetchone()[0]
 
         # Compara el número de mensajes antes y después
